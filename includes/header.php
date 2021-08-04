@@ -51,10 +51,7 @@ if (!isset($_SESSION) && !isset($_SESSION['role'])) {
             $admin_name = $fetchcamp['admin_name'];
         }
     }
-} else {
-    header("location: " . $_SERVER['SERVER_NAME']);
 }
-
 
 ?>
 

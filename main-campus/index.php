@@ -1,5 +1,8 @@
 <?php
 include('../includes/header.php');
+if (!isset($_SESSION['role'])) {
+    echo '<meta http-equiv="Refresh" content="0; url=../">';
+}
 include('../includes/links.php');
 ?>
 
