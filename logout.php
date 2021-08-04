@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-<?php include('.//links.php'); ?>
+<?php include 'links.php'; ?>
 
 <section class="site-section-light site-section-top themed-background-default">
 
