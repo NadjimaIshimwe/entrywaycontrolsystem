@@ -1,3 +1,4 @@
+<?php include './includes/header.php'; ?>
 <?php include 'links.php'; ?>
 
 <body class="login-page">

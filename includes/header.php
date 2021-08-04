@@ -1,5 +1,5 @@
 <?php
-ob_start();
+echo "hi";
 session_start();
 include 'db_controller.php';
 $dt = date("Y-m-d");
@@ -289,5 +289,3 @@ if (!isset($_SESSION) && !isset($_SESSION['role'])) {
     }
     </style>
 </head>
-
-<?php ob_end_flush(); ?>
