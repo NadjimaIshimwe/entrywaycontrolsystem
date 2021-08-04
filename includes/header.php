@@ -1,5 +1,5 @@
 <?php
-echo "hi";
+ob_start();
 session_start();
 include 'db_controller.php';
 $dt = date("Y-m-d");
@@ -52,6 +52,7 @@ if (!isset($_SESSION) && !isset($_SESSION['role'])) {
         }
     }
 } else if (($_SERVER['REQUEST_URI'] != "/entryway/") && ($_SERVER['REQUEST_URI'] != "/entryway/sign-up.php")) {
+    echo "hi";
     header("location: /entryway");
 }
 
@@ -289,3 +290,5 @@ if (!isset($_SESSION) && !isset($_SESSION['role'])) {
     }
     </style>
 </head>
+
+<?php ob_end_flush(); ?>
