@@ -51,9 +51,8 @@ if (!isset($_SESSION) && !isset($_SESSION['role'])) {
             $admin_name = $fetchcamp['admin_name'];
         }
     }
-} else if (($_SERVER['REQUEST_URI'] != "/entryway/") && ($_SERVER['REQUEST_URI'] != "/entryway/sign-up.php")) {
-    echo "hi";
-    header("location: /entryway");
+} else {
+    header("location: " . $_SERVER['SERVER_NAME']);
 }
 
 
