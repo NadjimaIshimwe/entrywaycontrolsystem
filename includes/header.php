@@ -1,12 +1,12 @@
 <?php
 ob_start();
 session_start();
-require 'db_controller.php';
+include 'db_controller.php';
 $dt = date("Y-m-d");
 $tim = date("H:i:s");
 
 // Login user Id
-if (!empty($_SESSION) && !empty($_SESSION['role'])) {
+if (!isset($_SESSION) && !isset($_SESSION['role'])) {
     $role_id = $_SESSION['role'];
 
     // end of user data

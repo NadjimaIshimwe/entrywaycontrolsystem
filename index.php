@@ -1,5 +1,5 @@
-<?php include 'includes/header.php'; ?>
-<?php include('./links.php'); ?>
+<?php include './includes/header.php'; ?>
+<?php include './links.php'; ?>
 
 <body class="login-page">
     <div class="login-box">
@@ -77,7 +77,7 @@
                         <!--</div>-->
 
                         <div class="col-xs-6">
-                            <a href="track/Icon.apk" download="icon"><i class="fa fa-android"></i> Android App</a>
+                            <a href="#"><i class="fa fa-android"></i> Android App</a>
                         </div>
 
                     </div>
@@ -86,7 +86,7 @@
         </div>
     </div>
 
-    <?php include('./js.php'); ?>
+    <?php include './js.php'; ?>
 </body>
 
 </html>
